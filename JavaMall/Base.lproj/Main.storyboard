@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Krf-MC-Yze">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ad View Controller-->
+        <scene sceneID="9dI-Qc-vWD">
+            <objects>
+                <viewController storyboardIdentifier="Ad" id="RJR-sU-IHZ" customClass="AdViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LmA-xv-er6"/>
+                        <viewControllerLayoutGuide type="bottom" id="CDB-k5-elG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TUw-Fd-Jbd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KXA-Eq-AyA">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lle-02-Uwv">
+                                <rect key="frame" x="305" y="627" width="50" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jng-0n-RGu">
+                                        <rect key="frame" x="0.0" y="5" width="50" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="tVx-iT-THH"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="w44-Tt-nN2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="跳过">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="skip:" destination="RJR-sU-IHZ" eventType="touchUpInside" id="duU-qV-9T6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Jng-0n-RGu" secondAttribute="bottom" constant="5" id="Gk9-fM-g6E"/>
+                                    <constraint firstAttribute="trailing" secondItem="Jng-0n-RGu" secondAttribute="trailing" id="ZzK-9x-ffN"/>
+                                    <constraint firstItem="Jng-0n-RGu" firstAttribute="leading" secondItem="lle-02-Uwv" secondAttribute="leading" id="doO-In-mfU"/>
+                                    <constraint firstAttribute="height" constant="30" id="mSl-Uh-nWD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="KXA-Eq-AyA" secondAttribute="trailing" id="BWG-sr-ohu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lle-02-Uwv" secondAttribute="trailing" constant="4" id="NCp-Ih-eBc"/>
+                            <constraint firstItem="KXA-Eq-AyA" firstAttribute="leading" secondItem="TUw-Fd-Jbd" secondAttribute="leading" id="gNk-6L-04w"/>
+                            <constraint firstItem="KXA-Eq-AyA" firstAttribute="top" secondItem="TUw-Fd-Jbd" secondAttribute="top" id="kOK-yO-yEG"/>
+                            <constraint firstAttribute="bottom" secondItem="KXA-Eq-AyA" secondAttribute="bottom" id="knd-d1-Lnl"/>
+                            <constraint firstItem="CDB-k5-elG" firstAttribute="top" secondItem="lle-02-Uwv" secondAttribute="bottom" constant="10" id="nzW-JT-VGI"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="adImage" destination="KXA-Eq-AyA" id="7vA-2g-ZPG"/>
+                        <outlet property="skip" destination="lle-02-Uwv" id="Hvr-MD-U41"/>
+                        <outlet property="skipbtns" destination="Jng-0n-RGu" id="mkP-Z1-tir"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O8z-md-sgy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2888.8000000000002" y="205.54722638680661"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ow7-ka-aXw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Krf-MC-Yze" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WiN-4h-M5A">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1wv-40-Egs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2432" y="206"/>
+        </scene>
+    </scenes>
+</document>

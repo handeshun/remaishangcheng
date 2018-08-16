@@ -1,0 +1,35 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "042fb819-6451-4d9d-9b63-c6d1cfcace8d++6222",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "042fb819-6451-4d9d-9b63-c6d1cfcace8d++6222" : {
+
+    },
+    "926acfcb-504f-5747-8fce-2f3b8b4669c4++2647" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "042fb819-6451-4d9d-9b63-c6d1cfcace8d++6222" : 9223372036854775807,
+    "926acfcb-504f-5747-8fce-2f3b8b4669c4++2647" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C75F35F0-F28A-4ABC-B3B9-343F4400676F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "042fb819-6451-4d9d-9b63-c6d1cfcace8d++6222" : "JavaShop\/",
+    "926acfcb-504f-5747-8fce-2f3b8b4669c4++2647" : "JavaMall_ios"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "JavaMall",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "JavaMall.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/newsvn.javamall.com.cn",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "042fb819-6451-4d9d-9b63-c6d1cfcace8d++6222"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/svn.enationsoft.com\/product",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "926acfcb-504f-5747-8fce-2f3b8b4669c4++2647"
+    }
+  ]
+}

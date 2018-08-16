@@ -1,0 +1,81 @@
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
+#import "UIColor+HexString.h"
+#import "Config.h"
+#endif
+
+#define kUserDefaultsCookie @"JavaMallCookie"
+#define kCurrentMemberKey @"JavaMallCurrentMember"
+
+#define nLogin @"LoginCompletionNotification"           //登录成功通知
+#define nLogout @"LogoutCompletionNotification"
+#define nAddCart @"AddCartCompletionNotification"       //添加到购物车成功通知
+#define nDeleteCart @"DeleteCompletionNofification"     //从购物车删除商品成功通知
+
+#define nFavriteChanged @"FavoriteChanged"              //收藏的商品改变
+
+#define nSelectAddress @"SelectAddressCompletionNotification"
+#define nEditAddress @"EditAddressCompletionNotification"
+#define nAddAddress @"AddAddressCompletionnotification"
+
+#define nSelectPaymentDelivery @"SelectPaymentDeliveryCompletionNotification"
+#define nSelectReceipt @"SelectReceiptCompletionNotification"
+#define nSelectBonus @"SelectBonusCompletionNotification"
+
+#define nToRoot @"ToRootNotification"     //到首页
+
+#define nCheckout @"CheckoutCompletionNotification"
+#define nChangePassword @"ChangePasswordCompletionNotification"
+
+#define nPostComment @"PostCommentCompletionNotification"   //发表评论成功
+#define nReturnedOrder @"ReturnedOrderCompletionNotification"   //退货申请提交成功
+#define nOrderStatusChanged @"CancelOrderCompletionNotification"   //订单状态改变通知
+
+#define nPaymentResult @"PaymentResultNotification"     //支付结果通知
+
+#define nchangStoreAddress @"ChangeAddressCompletionNotification"
+
+#define DebugLog(s, ...) NSLog(@"%s(%d): %@", __FUNCTION__, __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__])
+#define kTipAlert(_S_, ...)     [[[UIAlertView alloc] initWithTitle:@"提示" message:[NSString stringWithFormat:(_S_), ##__VA_ARGS__] delegate:nil cancelButtonTitle:@"知道了" otherButtonTitles:nil] show]
+
+#define kDevice_Is_iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+#define kDevice_Is_iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
+#define kDevice_Is_iPhone6Plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define ipadPro ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1024, 1366), [[UIScreen mainScreen] currentMode].size) : NO)
+
+#define kScreen_Bounds [UIScreen mainScreen].bounds
+#define kScreen_Height [UIScreen mainScreen].bounds.size.height
+#define kScreen_Width [UIScreen mainScreen].bounds.size.width
+
+#define kScaleFrom_iPhone5_Desgin(_X_) (_X_ * (kScreen_Width/320))
+
+#define kKeyWindow [UIApplication sharedApplication].keyWindow
+
+//界面相关
+
+//首屏幻灯高度
+#define kHomeAdvHeight 180
+
+#define QQ_LOGIN_TYPE 1
+#define SINA_LOGIN_TYPE 2
+#define WECHAT_LOGIN_TYPE 3
+
+//头部的背景色
+#define kHeaderBackgroundColor @"#FAFAFA"
+
+//边框线的颜色
+#define kBorderLineColor @"#CDCDCD"
+
+#define LBColor(R, G, B) [UIColor colorWithRed:(R)/255.0 green:(G)/255.0 blue:(B)/255.0 alpha:1]
+
+#define LBFont(px) [UIFont systemFontOfSize:[AdaptationKit setFontSize:px]]
+
+#define kStatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height
+#define kNavBarHeight 44.0
+#define kTabBarHeight ([[UIApplication sharedApplication] statusBarFrame].size.height>20?83:49)
+#define kTopHeight (kStatusBarHeight + kNavBarHeight)
+#define kBottomHeight ([[UIApplication sharedApplication] statusBarFrame].size.height>20?83 - 49:0)
+
